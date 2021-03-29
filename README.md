@@ -6,14 +6,20 @@
 
     git clone https://github.com/85yago/kyopro-docked.git
 
-あとはvscodeでファイルを開いてcontainerで開かせれば良いです。
+gitはなくてもいいですが（zipで落として展開すれば良い）、dockerはOSの合わせたものを導入してください。
+
+dockerをvscodeから使うための適切な拡張機能を入れてください。`Remote Development`を落とせば良いです。
+
+その後vscodeでファイルを開いてから、出てきたポップアップか`F1`→`Remote-Containers`からファイルをコンテナで開かせれば良いです。
 
 ## 編集すべき場所
-- `./.devcontainer/devcontainer.json`
+- `.devcontainer/devcontainer.json`
 
-`settings`でvscodeの`settings.json`を、`extensions`でcontainerにインストールする拡張機能をそれぞれ編集できます。
+`"settings"`でvscodeの`settings.json`を、`"extensions"`でコンテナににインストールする拡張機能をそれぞれ編集できます。
 
-- `./Dockerfile`
+C++のformatterの設定は85が好きな設定にしているので、適宜変更してください。
+
+- `Dockerfile`
 
 よしなにしてください。
 
