@@ -8,17 +8,15 @@
 	"dockerFile": "../Dockerfile",
 	// Set *default* container specific settings.json values on container create.
 	"settings": {
+		"editor.formatOnSave": true,
 		"terminal.integrated.shell.linux": null,
-		"C_Cpp.clang_format_style": "{ BasedOnStyle: LLVM, UseTab: Never, IndentWidth: 4, TabWidth: 4, BreakBeforeBraces: Attach, ColumnLimit: 0, AccessModifierOffset: -4, AllowShortBlocksOnASingleLine: true, AllowShortCaseLabelsOnASingleLine: true, IndentPPDirectives: AfterHash}",
+		"C_Cpp.clang_format_style": "{BasedOnStyle: LLVM, UseTab: Never, IndentWidth: 4, TabWidth: 4, BreakBeforeBraces: Attach, ColumnLimit: 0, AccessModifierOffset: -4, AllowShortBlocksOnASingleLine: true, AllowShortCaseLabelsOnASingleLine: true, IndentPPDirectives: AfterHash}",
 		"C_Cpp.default.cppStandard": "gnu++17",
 		"C_Cpp.default.compilerPath": "/usr/bin/gcc"
 	},
 	// Add the IDs of extensions you want installed when the container is created.
 	"extensions": [
-		"coenraads.bracket-pair-colorizer-2",
 		"MS-CEINTL.vscode-language-pack-ja",
-		"ibm.output-colorizer",
-		"vscode-icons-team.vscode-icons",
 		"ms-vscode.cpptools"
 	]
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
