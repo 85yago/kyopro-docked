@@ -12,7 +12,7 @@
                 "-O0",
                 "${file}",
                 "-o",
-                "${fileDirname}/${fileBasenameNoExtension}",
+                "${fileDirname}/bin/${fileBasenameNoExtension}",
                 "-DDEBUG=1"
             ],
             "options": {

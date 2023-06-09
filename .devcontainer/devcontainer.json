@@ -6,19 +6,21 @@
 	"context": "..",
 	// Update the 'dockerFile' property if you aren't using the standard 'Dockerfile' filename.
 	"dockerFile": "../Dockerfile",
-	// Set *default* container specific settings.json values on container create.
-	"settings": {
-		"editor.formatOnSave": true,
-		"terminal.integrated.shell.linux": null,
-		"C_Cpp.clang_format_style": "{BasedOnStyle: LLVM, UseTab: Never, IndentWidth: 4, TabWidth: 4, BreakBeforeBraces: Attach, ColumnLimit: 0, AccessModifierOffset: -4, AllowShortBlocksOnASingleLine: true, AllowShortCaseLabelsOnASingleLine: true, IndentPPDirectives: AfterHash}",
-		"C_Cpp.default.cppStandard": "gnu++17",
-		"C_Cpp.default.compilerPath": "/usr/bin/gcc"
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"MS-CEINTL.vscode-language-pack-ja",
+				"ms-vscode.cpptools"
+			],
+			"settings": {
+				"editor.formatOnSave": true,
+				"C_Cpp.clang_format_style": "{BasedOnStyle: LLVM, UseTab: Never, IndentWidth: 4, TabWidth: 4, BreakBeforeBraces: Attach, ColumnLimit: 0, AccessModifierOffset: -4, AllowShortBlocksOnASingleLine: true, AllowShortCaseLabelsOnASingleLine: true, IndentPPDirectives: AfterHash}",
+				"C_Cpp.default.cppStandard": "gnu++17",
+				"C_Cpp.default.compilerPath": "/usr/bin/gcc"
+			},
+		}
 	},
-	// Add the IDs of extensions you want installed when the container is created.
-	"extensions": [
-		"MS-CEINTL.vscode-language-pack-ja",
-		"ms-vscode.cpptools"
-	]
+	// Set *default* container specific settings.json values on container create.
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
 	// Uncomment the next line to run commands after the container is created - for example installing curl.
